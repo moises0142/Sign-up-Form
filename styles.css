@@ -11,16 +11,93 @@
     padding: 0;
     margin: 0;
     border:0;
+    overflow: hidden;
 }
-
-.container{
-    display: inline-block;
-
+.leftAndRightCont{
+    display: flex;    
 }
-
+.leafContainer{
+    height: 100vh;
+    width: 500px;
+}
+.leafBackground{
+    height:100%;
+}
 .caption{
     text-align: center;
     position: relative;
-    top:-40px;
+    top:-185px;
+    color: rgba(255, 255, 255, 0.815);
+    font-size:14px;
+    font-weight: 100;
+}
+a{
+    color: rgba(255, 255, 255, 0.815);
+}
 
+.leafHeader{
+    position:relative;
+    top: -600px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+.odinHead{
+    height: 100px;
+}
+.headerText{
+    color: white;
+    font-size: 80px;
+    font-family: 'norsebold',sans-serif;
+}
+
+.rightSideCont{
+    padding-left: 50px;
+    padding-top: 150px;
+}
+
+.firstLine{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 550;
+    max-width: 52ch;
+}
+
+.form{
+    display: flex;
+    gap:40px;
+}
+
+.leftSide{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+}
+.rightSide{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+}
+input{
+    border:1px solid black;
+}
+.logIn{
+    color:blue;
+}
+@media only screen and (max-width: 900px){
+    *{
+        overflow: auto;
+    }
+    .leafContainer{
+        height:50vh;
+        width: 250px;
+    }
+    .leafHeader{
+        top:-300px;
+    }
+    
 }
