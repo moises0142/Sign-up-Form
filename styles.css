@@ -18,7 +18,7 @@
 }
 .leafContainer{
     height: 100vh;
-    width: 750px;
+    width: 850px;
 }
 .leafBackground{
     height:100%;
@@ -54,7 +54,7 @@ a{
 }
 
 .rightSideCont{
-    padding-top: 80px;
+    padding-top: 120px;
     width: 100%;
     background-color: whitesmoke;
 }
@@ -63,8 +63,8 @@ a{
     padding-left: 60px;
     padding-bottom: 40px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    font-weight: 550;
+    font-size: 20px;
+    font-weight: 500;
     max-width: 52ch;
 }
 fieldset{
@@ -74,15 +74,15 @@ fieldset{
     box-shadow: rgba(0, 0, 0, 0.13) 0px 10px 10px;
 }
 .formTitle{
-    padding-top:30px;
+    padding-top:20px;
     font-size: 26px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .form{
     display: flex;
     flex-wrap: wrap ;
     gap:80px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 .leftSide, .rightSide{
@@ -140,17 +140,32 @@ button{
         overflow:auto;
     }
     .leafContainer{
-        overflow: hidden;
-        height:400px;
+        height:300px;
         width: 100vh;
+        position: relative;
     }
     .leafBackground{
+
+        width: 100vh;
+        height: auto;
     }
     .leafHeader{
-        top:-250px;
+        top:-1150px;
+    }
+    .caption{
+        top:-1100px;
     }
     .leftAndRightCont{
         flex-wrap: wrap;
+    }
+    .firstLine{
+        padding-left: 20px;
+        padding-right:20px;
+        text-align: center;
+    }
+    .already{
+  
+        padding-bottom:20px;
     }
 
 }
