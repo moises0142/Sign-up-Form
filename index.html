@@ -20,28 +20,42 @@
         <div class="rightSideCont">
             <div class="firstLine">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.<br><br>You <i>know</i> you want to.</div>
             <fieldset>
-                <legend>Let's do this</legend>
+                <div class="formTitle">Let's do this</div>
                 <form id="mainForm"action="" method="get" class="form">
                     <div class="leftSide">
-                        <label for="first-name">First Name:</label>
-                        <input id="first-name" name="first-name" type="text"/>
-                        <label for="">Email:</label>
-                        <input type="email" name="email" id="email">
-                        <label for="Phone-number">Phone number:</label>
-                        <input type="text" name="phone-number" id="phone-number">
+                        <div class="item">
+                            <label for="first-name">First Name:</label>
+                            <input id="first-name" name="first-name" type="text"/>
+                        </div>
+                        <div class="item">
+                            <label for="">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="item">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" required/>
+                            <span> </span>
+                        </div>
                     </div>
                     <div class="rightSide">
-                        <label for="Last-name">Last Name:</label>
-                        <input id="Last-name" type="text" name="Last-name">
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password">
-                        <label for="passwordRetype">Retype password:</label>
-                        <input type="password" name="passwordRetype" id="passwordRetype">
+                        <div class="item">
+                            <label for="Last-name">Last Name:</label>
+                            <input id="Last-name" type="text" name="Last-name">
+                        </div>
+                        <div class="item">
+                            <label for="Phone-number">Phone number:</label>
+                            <input type="text" name="phone-number" id="phone-number">
+                        </div>
+                        <div class="item">
+                            <label for="passwordRetype">Retype password:</label>
+                            <input type="password" name="passwordRetype" id="passwordRetype" required/>
+                        </div>
                     </div>
                 </form>
-                <button type="submit" form="mainForm">Create Account</button>
-                <div>Already have an accound? <a class="logIn">Log in</a></div>
             </fieldset>
+                <button type="submit" form="mainForm">Create Account</button>
+                <div class="already">Already have an account? <a class="logIn">Log in</a></div>
+
         </div>
     </div>
 

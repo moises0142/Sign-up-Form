@@ -14,11 +14,11 @@
     overflow: hidden;
 }
 .leftAndRightCont{
-    display: flex;    
+    display: flex;   
 }
 .leafContainer{
     height: 100vh;
-    width: 500px;
+    width: 750px;
 }
 .leafBackground{
     height:100%;
@@ -37,7 +37,7 @@ a{
 
 .leafHeader{
     position:relative;
-    top: -600px;
+    top: -700px;
     height:150px;
     display: flex;
     justify-content: center;
@@ -54,50 +54,103 @@ a{
 }
 
 .rightSideCont{
-    padding-left: 50px;
-    padding-top: 150px;
+    padding-top: 80px;
+    width: 100%;
+    background-color: whitesmoke;
 }
 
 .firstLine{
+    padding-left: 60px;
+    padding-bottom: 40px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
     font-weight: 550;
     max-width: 52ch;
 }
-
+fieldset{
+    padding-left: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 10px 10px;
+}
+.formTitle{
+    padding-top:30px;
+    font-size: 26px;
+    padding-bottom: 30px;
+}
 .form{
     display: flex;
-    gap:40px;
+    flex-wrap: wrap ;
+    gap:80px;
+    padding-bottom: 70px;
 }
 
-.leftSide{
+.leftSide, .rightSide{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 200px;
+    gap:30px;
+    width: 204px;
+    flex-wrap: wrap;
 }
-.rightSide{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 200px;
-}
-input{
+input,
+input[type="email"]{
     border:1px solid black;
+    border-radius: 3px;
+    width: 196px;
+    height: 24px;
+    padding-left: 4px;
 }
 .logIn{
-    color:blue;
+    color:#596D48;
+    cursor: pointer;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+input:invalid + span::before {
+    content: "*passwords do not match";
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 0, 0, 0.795);
+  }
+button{
+    margin-top: 30px;
+    margin-left: 60px;
+    padding:10px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #596D48;
+    color:white;
+    border: 1px #596D48;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.already{
+    margin-top: 30px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 500;
 }
 @media only screen and (max-width: 900px){
     *{
-        overflow: auto;
+        overflow:auto;
     }
     .leafContainer{
-        height:50vh;
-        width: 250px;
+        overflow: hidden;
+        height:400px;
+        width: 100vh;
+    }
+    .leafBackground{
     }
     .leafHeader{
-        top:-300px;
+        top:-250px;
     }
-    
+    .leftAndRightCont{
+        flex-wrap: wrap;
+    }
+
 }
